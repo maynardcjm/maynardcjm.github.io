@@ -18,9 +18,9 @@
 
 
 
-
+<div>
 <h3>Analyzing Cookie Timestamp Python Script</h3>
-<p style = "background-color:grey">
+<p>
 # -*- coding: utf-8 -*-
 """
 Senior Research COokie Data Processsing Python Script
@@ -205,6 +205,37 @@ writeFile(cookie_lifecyle) # method call to write files!
 
 </p>
 
+</div>
+
+
+<div>
+
+<h3>Python Script for Getting Number of Cookies for Each File</h3>
+ORG_file = "C:\\Users\\mayna\\Desktop\\Senior Research Snippets\\textData_files_forPYTHON\\ORG_DATAset_.txt"
+
+GOV_file = "C:\\Users\\mayna\\Desktop\\Senior Research Snippets\\textData_files_forPYTHON\\GOV_DataSET_.txt"
+
+EDU_file = "C:\\Users\\mayna\\Desktop\\Senior Research Snippets\\textData_files_forPYTHON\\EDU_DATAset_.txt" 
+
+NET_file = "C:\\Users\\mayna\\Desktop\\Senior Research Snippets\\textData_files_forPYTHON\\NET_DATAset_.txt"
+
+COM_file = "C:\\Users\\mayna\\Desktop\\Senior Research Snippets\\textData_files_forPYTHON\\COM_DATAset_.txt"
+
+filelist=[ORG_file, GOV_file, EDU_file, NET_file, COM_file]
+
+itr = 0
+for f in filelist:
+    with open(filelist[itr]) as infile :
+        table = infile.readlines()
+    
+    if itr == 0:
+        print("File Sizes")    
+    table = table[1:]
+    print(len(table))
+    itr+=1
+    
+
+</div>
 
 
 
