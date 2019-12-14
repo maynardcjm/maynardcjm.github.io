@@ -237,6 +237,104 @@ for f in filelist:
 
 </div>
 
+<!--Page Break-->
+<br/><br/>
+<br/><br/>
+
+<div>
+	<h1>DATA FILE MANIPULATION CODE </h1>
+
+<p># -*- coding: utf-8 -*-
+"""
+Created on Sat Dec 14 13:50:23 2019
+@author: maynard Collin
+
+This code helps with accessing each indivdual data file for better analysis of data and for performing data manipulations
+
+"""
+
+# file 1 of each data collection ---NOT USALABLE UNTIL MANIPULATION
+########    RAWWWWWWWWWWWWWWWWWWWWWWWWWWWW FILE_LOCATION's #################
+ORG_file = "C:\\Users\\mayna\Desktop\\Senior Research Snippets\\SR_Data Collection\\Data_as_text_files\\_org__.txt"
+
+GOV_file = "C:\\Users\\mayna\\Desktop\\Senior Research Snippets\\SR_Data Collection\\Data_as_text_files\\_gov_.txt"
+
+EDU_file = "C:\\Users\\mayna\\Desktop\\Senior Research Snippets\\SR_Data Collection\\Data_as_text_files\\_edu_.txt" 
+
+NET_file = "C:\\Users\\mayna\\Desktop\\Senior Research Snippets\\SR_Data Collection\\Data_as_text_files\\_net_.txt"
+
+COM_file = "C:\\Users\\mayna\\Desktop\\Senior Research Snippets\\SR_Data Collection\\Data_as_text_files\\_com_.txt"
+
+
+# dictionary for each file group location values
+#FILE_dictionary={'gov':GOV_file,'org':ORG_file,'net':NET_file,'edu':EDU_file,'com':COM_file}
+
+FILE_dictionary = {}
+empy_file_list = [] # holds each group of files for dictionary
+full_file_list = [ORG_file, GOV_file, EDU_file, NET_file, COM_file]
+
+key_list = ['gov', 'org', 'net', 'edu', 'com'] # holds dictionary key values
+
+
+
+####################################################
+# key for adding in differnt numbered files
+#print(FILE_dictionary['gov'])
+#manipulation = FILE_dictionary['gov'][:-4] + str(itr) + ".txt"
+#print(manipulation)
+####################################################
+
+
+
+"""-----------------------------------------------
+LOOP FOR POPULATING DICTIONARY WITH FILE NAMES
+loop description:
+    
+    There are a total of 5 files for each group the filename are unusable without the correct number. Each file are named the same but have a number an example _gov_1.txt for each group these files range from _gov_1.txt through _gov_5
+    
+    Outer loop loops through each key group org, gov, edu, net, com
+    Inner loop loops through each file name and adds it to each group
+    
+    Example first iteration is 'gov'
+    
+-----------------------------------------------"""
+
+"""COUNTERS"""
+outer_itr = 0 # outter loop iterator
+inner_itr = 1 # inner loop iterator
+file_iter = 0 
+# Code the rest in
+for repetition in range(0,5):
+    for repetition in range(0,5):
+        
+        new_key = (str(key_list[outer_itr])) + str(inner_itr) # creates new key for each instance
+        #old_key = (str(key_list[outer_itr])) outdated methodology for loop
+        
+        manipulation = full_file_list[outer_itr][:-4] + str(inner_itr) + ".txt"
+        #FILE_dictionary[new_key] = FILE_dictionary[old_key][:-4] + str(inner_itr) + ".txt" # outdated methodology for loop
+        
+        
+        FILE_dictionary[new_key] = str(manipulation) # add file name to dict
+
+        """ITERATOR INCREMENTER"""
+        inner_itr +=1
+        
+    inner_itr = 1 # reset inner loop iterator at the increment of outer loop
+    outer_itr+=1
+
+
+##### FOR TESTING LOOP ##############
+#print(FILE_dictionary) # print out all modified file locations
+#print(len(FILE_dictionary)) # test the correct number of files
+###################################
+
+# open file 
+#with open () :
+
+</p>
+
+</div>
+
 
 
 </body>
