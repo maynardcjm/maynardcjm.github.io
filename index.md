@@ -1,7 +1,6 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title> Mystical Books </title>
     <!--<link rel="stylesheet" href="StyleSheet1.css" />-->
 
 </head>
