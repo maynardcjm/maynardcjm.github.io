@@ -8,7 +8,7 @@
 <body>
     <!-- Top Navigation Bar -->
     <div class="Main_Menu">
-        <a href="HomePage.html">Home</a>
+        <a href="maynardcjm.github,io/Senior_Research">Senior Research</a>
         <a href="Shop.html">Shop</a>
         <a href="Contact.html">Contact Page</a>
         <a href="Survey.html">Survey Page</a>
