@@ -2,43 +2,38 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title> Mystical Books </title>
-    <link rel="stylesheet" href="StyleSheet1.css" />
-
 </head>
-
 <body>
     <!-- Top Navigation Bar -->
     <div class="Main_Menu">
-        <a href="HomePage.html">Home</a>
-        <a href="Shop.html">Shop</a>
-        <a href="Contact.html">Contact Page</a>
-        <a href="Survey.html">Survey Page</a>
+        <a href="maynardcjm.github.io">Home</a>
     </div>
 
-    <h1 class="title">MYSTICAL BOOKS</h1>
-
+    <h1 class="title">Web Tracking and its mechanisms</h1>
+<!--Navigate Project Links-->
     <div>
-        <!-- Display Images:  -->
-       
-        <img src="NewFolder1/booo0o0k.jpg" />
+        <a href = "maynardcjm.github.io/research_paper">Research Paper</a>
+        <a href = "maynardcjm.github.io/code">Data Processing Codes</a>
 
     </div>
+
+    <p>
+        <h3>Introduction of Research Topic</h3>
     
-    <div>
-        <h1 style="color:yellow">Welcome </h1>
-
-        <p>
-            Here at Mystical Books we like to provide a selection of older books than most book stores carry. We believe that old texts carry old widom. Please enjoy our selection.
-        </p>
+       Lately, there has been a demand for browsers which prevent online tracking. Mozilla Firefox is one such web browser which strives at protecting its users' privacy. People claim anonymity on the internet is dead. Why might this be? One reason to support this claim lies in the way companies can target users' with personalized ads. There are signs that certain apps listen to users' through there phone. Talk about catfood, catfood, catfood, and magically poof on Facebook there's an advertisement for catfood. As magically wonderful this technology is. It reveals a threat to users who wish to maintain their privacy on the web.                  
+    </p>
+    
+    <p>
+        Through my research I found there to be three main tracking mechanisms popular on the web: <br>
+        1) Third-party Cookies <br>
+        2) Canvas Fingerprinting <br>
+        3) Web Beacon <br><br>
+        
+    <h3>Summary of Research</h3>
   
-
-        <h1 style="color:yellow">About Us</h1>
-
-        <p>
-            We are a small local business in the State of Connecticut. We are located on 33 Elm St, Windsor Locks, CT. Mystical Books started up in 1989, and now we has been in business for 30 years. We are very grateful for our community and the customers.
-        </p>
-    </div>
+    Currently, for my research time has only permitted to examine Third-party Cookies. To observe the behaviors of third-party cookies the raw data stored on the computer's hard drive was observed. Five websites of each category was observed. The categories were .edu, .gov, .net, .com, and .org websites. The main attributes observed of the cookies were expiration time, creation time, and last accessed time. The data of these three times appear in a unix timestamp format. The difference in expiration time and creation time determined the lifetime of the cookie. The idea is that if cookies last an absurd amount of time that they were potentially more invasive to privacy. The data was collected from the sql file and then exported to a text file. From there python scripts were created to calculate the lifetime and convert the unix timestamps into legible time. 
+    
+    </p>
 
 
 
